@@ -21,7 +21,7 @@ def init():
 
 @app.route("/", methods=["GET","POST"])
 def home():
-    return `<h1>Student Score</h1>`
+    return """<h1>Student Score</h1>"""
 
 @app.route("/predict", methods=["GET","POST"])
 def predict():
