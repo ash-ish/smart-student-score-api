@@ -1,6 +1,4 @@
 import flask
-from datetime import datetime
-import pytz
 import numpy as np
 import tensorflow as tf
 from keras.models import model_from_json
