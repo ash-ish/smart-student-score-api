@@ -30,7 +30,7 @@ def predict():
     parameters.append(flask.request.args.get('hackathon'))
     parameters.append(flask.request.args.get('certificate'))
     if parameters[0] :
-        inputFeature = np.asarray(parameters).reshape(1, 3)
+        inputFeature = np.asarray(parameters).reshape(1, 5)
         print(inputFeature)
         with graph.as_default():
             raw_prediction = model.predict(inputFeature)[0][0]
