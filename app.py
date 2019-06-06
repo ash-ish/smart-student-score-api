@@ -19,6 +19,10 @@ def init():
     model.load_weights('classifier.h5')
     graph = tf.get_default_graph()
 
+@app.route("/", methods=["GET","POST"])
+def home():
+    return `<h1>Student Score</h1>`
+
 @app.route("/predict", methods=["GET","POST"])
 def predict():
     parameters = []
